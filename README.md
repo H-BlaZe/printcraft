@@ -51,7 +51,7 @@ Format tabular data as ASCII, Unicode, Markdown, or HTML tables.
 ```python
 from printcraft import ptable
 
-rows = [["ID", "Name"], [1, "Alice"], [2, "Bob"]]
+rows = [["ID", "Name"], [1, "Tamjeed"], [2, "Yasoha"]]
 ptable(rows, style="unicode")
 ```
 
