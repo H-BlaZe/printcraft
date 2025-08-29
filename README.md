@@ -1,4 +1,3 @@
-cat > README.md << 'EOF'
 # PrintCraft 🖨️✨
 **Beautifully formatted console printing for Python.**
 
@@ -28,9 +27,9 @@ Unlike `pprint`, `tabulate`, or `rich`, it combines **multiple formatters**, **t
 ---
 
 ## 📦 Installation
-\`\`\`bash
+```bash
 pip install printcraft
-\`\`\`
+```
 
 ---
 
@@ -38,73 +37,73 @@ pip install printcraft
 
 ### 1. `pjson(data, theme="default")`
 Pretty-print JSON objects with optional color themes.  
-\`\`\`python
+```python
 from printcraft import pjson
 
 sample = {"name": "Afaq", "age": 23, "active": True}
 pjson(sample, theme="monokai")
-\`\`\`
+```
 
 ---
 
 ### 2. `ptable(rows, style="ascii")`
 Format tabular data as ASCII, Unicode, Markdown, or HTML tables.  
-\`\`\`python
+```python
 from printcraft import ptable
 
 rows = [["ID", "Name"], [1, "Alice"], [2, "Bob"]]
 ptable(rows, style="unicode")
-\`\`\`
+```
 
 ---
 
 ### 3. `pdict(data)`
 Nicely aligned dictionary printing.  
-\`\`\`python
+```python
 from printcraft import pdict
 
 d = {"alpha": 1, "beta": 22, "gamma": 333}
 pdict(d)
-\`\`\`
+```
 
 ---
 
 ### 4. `plist(data, compact=False)`
 Format lists/tuples with optional compact mode.  
-\`\`\`python
+```python
 from printcraft import plist
 
 plist([1, 2, 3, 4, 5], compact=True)
-\`\`\`
+```
 
 ---
 
 ### 5. `ppreview(data, max_items=5)`
 Preview large structures without dumping everything.  
-\`\`\`python
+```python
 from printcraft import ppreview
 
 ppreview(list(range(100)), max_items=10)
-\`\`\`
+```
 
 ---
 
 ### 6. `pcraft(data)`
 **Auto-detect** → decides best format automatically.  
-\`\`\`python
+```python
 from printcraft import pcraft
 
 pcraft({"alpha": 1, "beta": 2})   # Uses dict formatter
 pcraft([1, 2, 3, 4, 5])           # Uses list formatter
 pcraft([["A", "B"], [1, 2]])      # Uses table formatter
-\`\`\`
+```
 
 ---
 
 ## 🧪 Tests
-\`\`\`bash
+```bash
 pytest tests/
-\`\`\`
+```
 
 ---
 
@@ -116,6 +115,3 @@ See [examples/](examples) for:
 
 ---
 
-## 📜 License
-MIT License. Free to use and modify.
-EOF
