@@ -115,3 +115,26 @@ See [examples/](examples) for:
 
 ---
 
+| Function / Class      | Parameter   | Allowed / Typical Values                              | Notes                                                                            | 
+| --------------------- | ----------- | ----------------------------------------------------- | -------------------------------------------------------------------------------- | 
+| `json()`              | `obj`       | Any JSON-serializable dict/list                       |                                                                                  | 
+|                       | `color`     | `True` / `False`                                      | Applies ANSI colors in terminal                                                  | 
+|                       | `indent`    | `1,2,3,...`                                           | Number of spaces for pretty-print                                                | 
+|                       | `theme`     | `"default"`, `"dark"` (or any defined in `themes.py`) | Color scheme for keys/values                                                     | 
+|                       | `stream`    | `None` (stdout) or file-like object                   | Redirect output to file                                                          | 
+| `table()`             | `data`      | List of dicts / list of lists                         | Single dict must be wrapped in `[dict]`                                          | 
+|                       | `headers`   | List of strings                                       | Optional column headers                                                          | 
+|                       | `style`     | `"ascii"`, `"unicode"`                                | ASCII: `+ - `, Unicode: `┼ ─ │\`                                                 |
+|                       | `color`     | `True` / `False`                                      | Colors first column numbers                                                      | 
+| `dict()`              | `d`         | dict                                                  |                                                                                  | 
+|                       | `max_items` | `1,2,...`                                             | Maximum keys to display before truncating                                        | 
+| `list()`              | `lst`       | list/tuple                                            |                                                                                  | 
+|                       | `max_items` | `1,2,...`                                             | Maximum items to display before truncating                                       | 
+| `preview()`           | `obj`       | any Python object                                     | Works with dict, list, string, number, etc.                                      | 
+|                       | `max_items` | `1,2,...`                                             | Items shown for collections                                                      | 
+| `craft()`             | `obj`       | any Python object                                     | Auto-selects formatter: json, table, dict, list, preview                         | 
+|                       | `color`     | `True` / `False`                                      | Applies only if formatter supports it                                            | 
+|                       | `max_items` | `1,2,...`                                             | Used for truncating lists/dicts                                                  | 
+| `PrintCraftFormatter` | `pretty`    | `True` / `False`                                      | Pretty formatting for logs                                                       | 
+|                       | `color`     | `True` / `False`                                      | Adds color codes for log output                                                  | 
+| **`themes.py`**       | Theme names | `"default"`, `"dark"`                                 | Can define new themes with `"key"`, `"string"`, `"number"`, `"reset"` ANSI codes | 
