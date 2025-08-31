@@ -4,12 +4,12 @@
 PrintCraft - A modern Python pretty-printing library.
 
 Public API re-exports:
-    - pjson(...)     → Pretty-print JSON objects
-    - ptable(...)    → Pretty-print tabular data
-    - pdict(...)     → Pretty-print dictionaries
-    - plist(...)     → Pretty-print lists/tuples
-    - ppreview(...)  → Compact preview mode
-    - pcraft(...)    → Auto-detect the best formatter
+    - json(...)     → Pretty-print JSON objects
+    - table(...)    → Pretty-print tabular data
+    - dict(...)     → Pretty-print dictionaries
+    - list(...)     → Pretty-print lists/tuples
+    - preview(...)  → Compact preview mode
+    - craft(...)    → Auto-detect the best formatter
     - PrintCraftFormatter → Logging formatter for integration
 """
 

@@ -4,22 +4,16 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "printcraft"
-version = "0.1.0"
-description = "Beautifully formatted printing for Python: JSON, tables, dicts, lists, tuples, and more."
-authors = [
-    { name="Your Name", email="youremail@example.com" }
-]
+version = "1.0.0"
+description = "A pretty-printing library for dicts, lists, tables, and JSON."
 readme = "README.md"
-license = { text = "MIT" }
-keywords = ["print", "formatter", "json", "table", "python", "pretty-print"]
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
+license = {text = "MIT"}
+authors = [
+  {name = "Sayed Afaq Ahmed", email = "sayedafaq.contact@gmail.com"}
 ]
 requires-python = ">=3.8"
-
-[project.urls]
-Homepage = "https://github.com/yourusername/printcraft"
-Documentation = "https://github.com/yourusername/printcraft#readme"
-Source = "https://github.com/yourusername/printcraft"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
